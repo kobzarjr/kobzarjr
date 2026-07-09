@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Это или то? — Игра для пары</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app" id="app">
+<a href="../index.html" class="home-link" title="На главную">🏠</a>
+    <!-- ЭКРАН ВЫБОРА КАТЕГОРИЙ -->
+    <div id="categoryScreen">
+        <h1>✨ Это или то?</h1>
+        <div class="subhead">Выберите категорию и начните игру</div>
+        <div class="cat-grid" id="categoryGrid"></div>
+    </div>
+
+    <!-- ЭКРАН ИГРЫ -->
+    <div id="gameScreen">
+        <div class="game-header">
+            <button class="back-btn" id="backToCategories">← Назад</button>
+            <span class="counter" id="counter">Осталось: 0</span>
+        </div>
+        <div class="question-box" id="questionDisplay">Загрузка...</div>
+        <div class="options" id="optionsContainer">
+            <button class="option-btn a" id="optionA">Вариант А</button>
+            <button class="option-btn b" id="optionB">Вариант Б</button>
+        </div>
+        <div class="game-footer">
+            <button class="reset-btn" id="resetCategoryBtn">🔄 Перемешать заново</button>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
